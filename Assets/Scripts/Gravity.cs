@@ -14,7 +14,14 @@ public class Gravity : MonoBehaviour
 
         while (Physics.Raycast(transform.position, Vector3.down, out hit, DistanceToGround))
         {
-            transform.Translate(Vector3.up * GravityStrength);
+            if (hit.collider.gameObject.tag == "Terrain")
+            {
+                transform.Translate(Vector3.up * GravityStrength);
+            }
+            else
+            {
+                break;
+            }
         }
     }
 }

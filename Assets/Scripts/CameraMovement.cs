@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -21,15 +20,17 @@ public class CameraMovement : MonoBehaviour
 
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         dolly = this.transform;
         cam = transform.FindChild("Camera");
         player = GameObject.FindGameObjectWithTag("Player").transform;
-	    dolly.position = player.position;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        dolly.position = player.position;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         dolly.position = player.position;
         dolly.rotation = player.rotation;
 
