@@ -1,15 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-
     private GameObject _uiStart;
     private GameObject _uiIngame;
+    public DeathMsg _deathMsg;
 
     void Start()
     {
         _uiStart = GameObject.Find("CanvasStartScreen");
         _uiIngame = GameObject.Find("CanvasInGame");
+        _deathMsg = GameObject.Find("DeathMsg").GetComponent<DeathMsg>();
     }
 
     public void Update()
@@ -34,5 +36,11 @@ public class GameController : MonoBehaviour
     public void StartGame()
     {
         Config.SetGameState("GameRunning", true);
+    }
+
+    public void EndGame()
+    {
+        Config.SetGameState("GameRunning", false);
+        _deathMsg.StartTimer();
     }
 }
