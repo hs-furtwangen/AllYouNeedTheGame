@@ -1,0 +1,131 @@
+fileFormatVersion: 2
+guid: a6c34a587134ec043a65311fcb181e15
+timeCreated: 1454194075
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Arm_links
+    100002: Arm_rechts
+    100004: Becken
+    100006: Bein_links
+    100008: Bein_rechts
+    100010: Ellbogen_links
+    100012: Ellbogen_rechts
+    100014: Hals
+    100016: Hand_links
+    100018: Hand_rechts
+    100020: Joint_1
+    100022: Joint_2
+    100024: Joint_5
+    100026: Joint_5_2
+    100028: Joint_6
+    100030: Joint_6_2
+    100032: Joint_7
+    100034: Joint_7_2
+    100036: Joint_8
+    100038: Joint_8_2
+    100040: "Kn\xF6pfe"
+    100042: Kopf
+    100044: "K\xF6rper"
+    100046: //RootNode
+    100048: Root
+    400000: Arm_links
+    400002: Arm_rechts
+    400004: Becken
+    400006: Bein_links
+    400008: Bein_rechts
+    400010: Ellbogen_links
+    400012: Ellbogen_rechts
+    400014: Hals
+    400016: Hand_links
+    400018: Hand_rechts
+    400020: Joint_1
+    400022: Joint_2
+    400024: Joint_5
+    400026: Joint_5_2
+    400028: Joint_6
+    400030: Joint_6_2
+    400032: Joint_7
+    400034: Joint_7_2
+    400036: Joint_8
+    400038: Joint_8_2
+    400040: "Kn\xF6pfe"
+    400042: Kopf
+    400044: "K\xF6rper"
+    400046: //RootNode
+    400048: Root
+    2300000: "Kn\xF6pfe"
+    2300002: Kopf
+    3300000: "Kn\xF6pfe"
+    3300002: Kopf
+    4300000: "K\xF6rper"
+    4300002: "Kn\xF6pfe"
+    4300004: Kopf
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    13700000: "K\xF6rper"
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
