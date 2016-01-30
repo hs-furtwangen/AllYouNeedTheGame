@@ -1,74 +1,73 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &108246
+--- !u!1 &189084
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 426294}
-  - 33: {fileID: 3394436}
-  - 23: {fileID: 2323646}
+  - 4: {fileID: 470510}
   m_Layer: 0
-  m_Name: "H\xE4ngematte"
+  m_Name: "Zahnb\xFCrste"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &192580
+--- !u!1 &197376
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 465090}
-  - 65: {fileID: 6526094}
+  - 4: {fileID: 473930}
+  - 33: {fileID: 3305540}
+  - 23: {fileID: 2391210}
   m_Layer: 0
-  m_Name: "H\xE4ngematte"
-  m_TagString: Terrain
+  m_Name: "Zahnb\xFCrste_2"
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &426294
+--- !u!4 &470510
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108246}
-  m_LocalRotation: {x: -0.53154874, y: -0.07840166, z: -0.12306596, w: 0.83436435}
+  m_GameObject: {fileID: 189084}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 473930}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &473930
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197376}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 465090}
+  m_Father: {fileID: 470510}
   m_RootOrder: 0
---- !u!4 &465090
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192580}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.163331, y: -2.4792285, z: 0.5151477}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 426294}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!23 &2323646
+--- !u!23 &2391210
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108246}
+  m_GameObject: {fileID: 197376}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 2100000, guid: 5767f4ec97361b44e884c9366587cc40, type: 2}
+  - {fileID: 2100000, guid: f7e6b17470dd8b145aa43e46ce3ef956, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -84,37 +83,21 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &3394436
+--- !u!33 &3305540
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 108246}
-  m_Mesh: {fileID: 4300000, guid: f98368abfd8fa56459d4c20ff6b72501, type: 3}
---- !u!65 &6526094
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192580}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.96, y: 2.04, z: 3.23}
-  m_Center: {x: 0.12, y: -0.3, z: 1.12}
+  m_GameObject: {fileID: 197376}
+  m_Mesh: {fileID: 4300000, guid: 40e1a2418ad7b304ebc213ed2a1cbc2b, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 0}
-      propertyPath: m_TagString
-      value: Terrain
-      objectReference: {fileID: 0}
+    m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 192580}
+  m_RootGameObject: {fileID: 189084}
   m_IsPrefabParent: 1
