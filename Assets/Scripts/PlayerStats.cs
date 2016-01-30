@@ -7,26 +7,31 @@ public class PlayerStats : MonoBehaviour
     public float Food;
     public float FoodDepletion;
     public GameObject FoodLabel;
+    public float FoodDepletionTimeModifier;
 
     public float StartRest;
     public float Rest;
     public float RestDepletion;
     public GameObject RestLabel;
+    public float RestDepletionTimeModifier;
 
     public float StartFun;
     public float Fun;
     public float FunDepletion;
     public GameObject FunLabel;
+    public float FunDepletionTimeModifier;
 
     public float StartClean;
     public float Clean;
     public float CleanDepletion;
     public GameObject CleanLabel;
+    public float CleanDepletionTimeModifier;
 
     public float StartSexerino;
     public float Sexerino;
     public float SexDepletion;
     public GameObject SexLabel;
+    public float SexDepletionTimeModifier;
 
     public Vector3 StartPosition;
     public Vector3 StartRotation;
@@ -48,6 +53,12 @@ public class PlayerStats : MonoBehaviour
             Sexerino -= SexDepletion*Time.deltaTime;
             Fun -= FunDepletion*Time.deltaTime;
             Clean -= CleanDepletion*Time.deltaTime;
+
+            FoodDepletion += FoodDepletionTimeModifier*Time.deltaTime;
+            RestDepletion += RestDepletionTimeModifier*Time.deltaTime;
+            SexDepletion += SexDepletionTimeModifier*Time.deltaTime;
+            FunDepletion += FunDepletionTimeModifier*Time.deltaTime;
+            CleanDepletion += CleanDepletionTimeModifier*Time.deltaTime;
 
             Food = Mathf.Clamp(Food, 0, 100);
             Rest = Mathf.Clamp(Rest, 0, 100);

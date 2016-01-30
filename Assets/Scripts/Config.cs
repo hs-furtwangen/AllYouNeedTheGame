@@ -6,7 +6,6 @@ public static class Config
 {
     private static Dictionary<string, bool> GameStates;
 
-
     static Config()
     {
         GameStates = new Dictionary<string, bool>();

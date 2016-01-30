@@ -25,6 +25,7 @@ public class Trigger : MonoBehaviour
     private bool _lastTriggerState;
 
     public GameObject TriggerImage;
+    private bool _hasAudio;
 
     // Use this for initialization
     void Start()
@@ -34,6 +35,10 @@ public class Trigger : MonoBehaviour
         ps = this.transform.FindChild("Particles").GetComponent<ParticleSystem>();
         _usageTimer = UsageTimer;
         _downtime = Downtime;
+
+        _hasAudio = false;
+        if (this.GetComponent<AudioSource>().clip != null)
+            _hasAudio = true;
     }
 
     // Update is called once per frame
@@ -81,10 +86,18 @@ public class Trigger : MonoBehaviour
                 if (_triggerState)
                 {
                     TriggerImage.SetActive(true);
+                    if (_hasAudio)
+                    {
+                        this.GetComponent<AudioSource>().Play();
+                    }
                 }
                 else
                 {
                     TriggerImage.SetActive(false);
+                    if (_hasAudio)
+                    {
+                        this.GetComponent<AudioSource>().Stop();
+                    }
                 }
             }
         }
