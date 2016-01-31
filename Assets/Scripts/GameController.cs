@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     {
         _uiStart = GameObject.Find("CanvasStartScreen");
         _uiIngame = GameObject.Find("CanvasInGame");
-        _deathMsg = GameObject.Find("DeathMsg").GetComponent<DeathMsg>();
+        //_deathMsg = GameObject.Find("DeathMsg").GetComponent<DeathMsg>();
     }
 
     public void Update()

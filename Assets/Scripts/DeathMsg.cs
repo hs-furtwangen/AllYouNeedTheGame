@@ -17,7 +17,7 @@ public class DeathMsg : MonoBehaviour
     }
 
 	// Update is called once per frame
-	void Update () {
+    void Update () {
         if (_currentStay > 0)
         {
             this.gameObject.GetComponent<Text>().color = color;
