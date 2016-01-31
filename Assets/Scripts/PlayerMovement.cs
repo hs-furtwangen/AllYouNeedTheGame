@@ -13,10 +13,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Config.GetGameState("GameRunning"))
         {
+
             rot += Input.GetAxis("Horizontal");
 
             this.transform.Translate(Input.GetAxis("Vertical")*SpeedMovement*Time.deltaTime*Vector3.forward);
-            this.transform.rotation = Quaternion.Euler(0, rot, 0);
+            this.transform.rotation = Quaternion.Euler(0, rot *SpeedRotation, 0);
         }
         _positionLastFrame = this.transform.position;
     }

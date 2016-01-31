@@ -143,6 +143,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3a83a29d533edd4ea760e23c662db56, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &9192137 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 196286, guid: cece283ace94ab6428c9fc203ef1f9f0, type: 2}
+  m_PrefabInternal: {fileID: 1419540292}
+--- !u!65 &9192139
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9192137}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.92, y: 8.47, z: 4.81}
+  m_Center: {x: -1.76, y: 0.68, z: 0}
 --- !u!1 &26124011
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +780,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 82693451}
+--- !u!1 &96054842 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 110526, guid: be482be04c8db4447b56230bf02fe582, type: 2}
+  m_PrefabInternal: {fileID: 1203711389}
+--- !u!136 &96054848
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96054842}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 3.33
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.03, z: 0}
 --- !u!1001 &97827869
 Prefab:
   m_ObjectHideFlags: 0
@@ -3089,6 +3122,22 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3a83a29d533edd4ea760e23c662db56, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &363360186 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 195618, guid: 5c1e71654ac8860489f875d8db19f383, type: 2}
+  m_PrefabInternal: {fileID: 1438048829}
+--- !u!65 &363360188
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 363360186}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: -10.64, y: 4.93, z: 7.27}
+  m_Center: {x: -0.2, y: 2.51, z: 9.46}
 --- !u!1 &367995173
 GameObject:
   m_ObjectHideFlags: 0
@@ -5290,7 +5339,7 @@ GameObject:
   - 23: {fileID: 683222371}
   m_Layer: 0
   m_Name: bad_boden (1)
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5595,7 +5644,7 @@ GameObject:
   - 23: {fileID: 711478568}
   m_Layer: 0
   m_Name: 'lesen_boden '
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5976,7 +6025,7 @@ GameObject:
   - 23: {fileID: 754105777}
   m_Layer: 0
   m_Name: bett_boden
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8243,6 +8292,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .74460274
       objectReference: {fileID: 0}
+    - target: {fileID: 154336, guid: ee8d0c8a61598344b92a91cddc4d42a2, type: 2}
+      propertyPath: m_TagString
+      value: Terrain
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee8d0c8a61598344b92a91cddc4d42a2, type: 2}
   m_IsPrefabParent: 0
@@ -10066,6 +10119,14 @@ Prefab:
       propertyPath: StartPosition.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11468634, guid: be482be04c8db4447b56230bf02fe582, type: 2}
+      propertyPath: SpeedMovement
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11468634, guid: be482be04c8db4447b56230bf02fe582, type: 2}
+      propertyPath: SpeedRotation
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: be482be04c8db4447b56230bf02fe582, type: 2}
   m_IsPrefabParent: 0
@@ -10796,7 +10857,7 @@ GameObject:
   - 23: {fileID: 1278696087}
   m_Layer: 0
   m_Name: bad_boden
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10924,6 +10985,26 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03a82d29534a4ee499b598c0514e91ea, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1293056966 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 170184, guid: be482be04c8db4447b56230bf02fe582, type: 2}
+  m_PrefabInternal: {fileID: 1203711389}
+--- !u!111 &1293056969
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1293056966}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400002, guid: a6c34a587134ec043a65311fcb181e15, type: 3}
+  m_Animations:
+  - {fileID: 7400002, guid: a6c34a587134ec043a65311fcb181e15, type: 3}
+  - {fileID: 7400000, guid: a6c34a587134ec043a65311fcb181e15, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1001 &1302372882
 Prefab:
   m_ObjectHideFlags: 0
@@ -14505,6 +14586,19 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 226b27ac9e28c464e9829e46f4573af9, type: 3}
   m_PrefabInternal: {fileID: 960902568}
+--- !u!136 &1788210859
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1788210857}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.6
+  m_Height: 11.03
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!111 &1788210860
 Animation:
   m_ObjectHideFlags: 0
@@ -14533,7 +14627,7 @@ GameObject:
   - 23: {fileID: 1800562743}
   m_Layer: 0
   m_Name: telefon_boden
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
